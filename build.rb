@@ -5,7 +5,7 @@ require "yaml"
 
 include ERB::Util
 
-SITE_URL = "https://kaelsantini.github.io"
+SITE_URL = "https://kael.is-a.dev"
 ROUTES = { "en" => "/", "pt-BR" => "/pt/" }.freeze
 CONTACTS = {
   "kael.santini@gmail.com" => "mailto:kael.santini@gmail.com",
