@@ -30,6 +30,7 @@ products:
 
 experience:
   - company: DESYS Finance
+    url: https://credicoopavel.com.br/
     role: Desenvolvedor Ruby on Rails Sênior
     period: jan 2024 até hoje
     description: Aplicação financeira e bancária com integração via API à camada central do negócio. Layout mobile-first, empacotado para várias plataformas.
