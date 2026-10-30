@@ -12,7 +12,7 @@ CONTACTS = {
   "GitHub" => "https://github.com/kaelsantini",
   "LinkedIn" => "https://www.linkedin.com/in/kael-santini-6849ab215/"
 }.freeze
-COPY_ICON = %(<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><g class="icon-copy"><rect x="9" y="9" width="12" height="12"/><path d="M5 15H3V3h12v2"/></g><path class="icon-done" d="M4 12l6 6L20 6"/></svg>)
+COPY_ICON = %(<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g class="icon-copy"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></g><path class="icon-done" d="M4 12l6 6L20 6"/></svg>)
 
 ROOT = __dir__
 DIST = File.join(ROOT, "dist")
