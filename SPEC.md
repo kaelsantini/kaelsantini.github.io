@@ -46,6 +46,7 @@ Public repository `kaelsantini/kaelsantini.github.io`:
 │   ├── fonts/          # Oswald and Source Code Pro as woff2
 │   └── styles.css
 ├── build.rb            # generates dist/ from content/ and templates/
+├── preview.sh          # builds, serves dist/ and opens Chrome
 ├── .gitignore          # dist/ and *.pdf
 └── SPEC.md
 ```
@@ -124,11 +125,11 @@ Edit the copy in `content/`, the layout in `templates/` or the styles in `assets
 Preview locally:
 
 ```bash
-ruby build.rb
-ruby -run -e httpd dist -p 8000  # needs the webrick gem on Ruby 3+
+./preview.sh       # port 8000
+./preview.sh 8080  # custom port
 ```
 
-If `webrick` is not installed, use `python3 -m http.server 8000 --directory dist`. Then open <http://localhost:8000>.
+It builds the site, serves `dist/` with `python3 -m http.server` and opens <http://localhost:8000> in Chrome. Ctrl+C stops the server.
 
 Publish:
 
