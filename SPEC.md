@@ -16,7 +16,7 @@ A public page that presents Kael Santini as a senior Ruby on Rails developer and
 | Contact | Links to `kael.santini@gmail.com`, [GitHub](https://github.com/kaelsantini) and [LinkedIn](https://www.linkedin.com/in/kael-santini-6849ab215/) | No form, so no backend |
 | Visual | Typographic continuation of the resume | The site inherits an identity that is already Kael's, instead of a template or AI default |
 | Hosting | GitHub Pages | Works with is-a.dev and does not depend on the Hetzner server |
-| Domain | `kaelsantini.is-a.dev` | Free; the name was available on 2026-10-30, subject to PR approval |
+| Domain | `kael.is-a.dev` | Free; the name was available on 2026-10-30, subject to PR approval |
 
 ### Rejected hosting options
 
@@ -111,9 +111,9 @@ Before publishing, check the page against the list above, in both languages and 
 
 1. Create the repository and publish at `https://kaelsantini.github.io`.
 2. In [Settings > Pages](https://github.com/kaelsantini/kaelsantini.github.io/settings/pages), set **Build and deployment > Source** to **GitHub Actions**.
-3. Open the PR at [is-a-dev/register](https://github.com/is-a-dev/register) with `domains/kaelsantini.json`, using `kaelsantini.github.io` as the CNAME. The PR must be written by Kael: is-a.dev asks that requests not be AI-generated.
-4. Only after the merge, enter `kaelsantini.is-a.dev` in Settings > Pages > Custom domain and enable Enforce HTTPS.
-5. Update `SITE_URL` in `build.rb` and publish again.
+3. Open the PR at [is-a-dev/register](https://github.com/is-a-dev/register) with `domains/kael.json`, using `kaelsantini.github.io` as the CNAME. Kael must write and open this PR by hand: is-a.dev denies AI-generated pull requests, and no agent should open or draft it.
+4. Only after the merge, enter `kael.is-a.dev` in Settings > Pages > Custom domain and enable Enforce HTTPS.
+5. Set `SITE_URL` in `build.rb` to `https://kael.is-a.dev` and publish again.
 
 Official guide: <https://docs.is-a.dev/guides/github-pages/>
 
