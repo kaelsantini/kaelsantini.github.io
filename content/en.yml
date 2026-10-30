@@ -1,0 +1,78 @@
+html_lang: en
+og_locale: en_US
+title: Kael Santini, Senior Ruby on Rails Developer
+description: Kael Santini builds and maintains web applications in Ruby on Rails. Creator of simplifica.work, Rachide and nafrente.live.
+
+other_language: Português
+role: Senior Ruby on Rails Developer
+summary: Software developer with 15+ years of experience building web applications, including 5+ years specializing in Ruby on Rails. I design and maintain production systems, and I run three products of my own.
+
+headings:
+  products: Products
+  experience: Experience
+  earlier: Earlier experience
+  stack: Tech stack
+  education: Education
+
+products:
+  - name: simplifica.work
+    url: https://simplifica.work
+    role: Creator and maintainer
+    description: CRM and event management platform for venues and event businesses. Leads, WhatsApp conversations, visit scheduling, bookings, contracts and event calendars live in a single workflow. Built with Ruby on Rails, Hotwire and PostgreSQL.
+  - name: Rachide
+    url: https://rachide.app
+    role: Creator and maintainer
+    description: Splits group expenses for shared costs such as trips, rentals and events. Available on the web and packaged for Android and iOS.
+  - name: nafrente.live
+    url: https://nafrente.live
+    role: Creator and maintainer
+    description: Public topic competition where users submit and vote on trending topics, with payment integration for platform features and participation.
+
+experience:
+  - company: DESYS Finance
+    role: Senior Ruby on Rails Developer
+    period: Jan 2024 to present
+    description: Financial and banking application with API integration to the core business layer. Mobile-first layout, packaged for multiple platforms.
+    tech: Ruby on Rails, PostgreSQL, RSpec, iOS and Android, Bootstrap, GitHub, CI, Docker
+  - company: EasyLemon
+    url: https://easylemon.app
+    role: Ruby on Rails Developer
+    period: 2023 to 2024
+    description: SaaS platform for productivity and workflow automation, built on Rails 7 conventions. Hotwire and Turbo Streams delivered real-time interface updates across the system with minimal JavaScript and no heavy frontend framework.
+    tech: Ruby on Rails 7, PostgreSQL, Hotwire, Turbo, Bootstrap, GitHub, CI
+  - company: CGS Móveis
+    url: https://cgsmoveis.com.br
+    role: Ruby on Rails Developer
+    period: 2021 to 2023
+    description: Order management system for a furniture factory, synchronized with a remote system. Well tested, with a complex data structure.
+    tech: Ruby on Rails, PostgreSQL, RSpec, Bootstrap, GitHub, CI
+
+earlier:
+  - company: Ministério da Justiça
+    role: Java System Analyst
+    period: 2017 to 2021
+  - company: CTMGEO
+    role: Java Engineer
+    period: 2014 to 2016
+  - company: Prefeitura de Cascavel
+    role: System Analyst
+    period: 2013 to 2016
+  - company: Wealth Systems
+    role: Java Developer
+    period: 2011 to 2013
+  - company: Coach View / Frimesa
+    role: PHP Engineer
+    period: 2009 to 2011
+
+stack:
+  - Ruby on Rails, PostgreSQL, Hotwire, Turbo Streams, RSpec
+  - Docker, Git, CI/CD, Bootstrap
+  - iOS and Android packaging
+
+education:
+  - school: UNICESUMAR
+    degree: Software Engineering
+    period: 2018 to 2022
+  - school: Universidade Tecnológica Federal do Paraná
+    degree: Technologist in Software Analysis and Development
+    period: 2007 to 2011

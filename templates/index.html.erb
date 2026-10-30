@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="<%= h t["html_lang"] %>">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title><%= h t["title"] %></title>
+  <meta name="description" content="<%= h t["description"] %>">
+  <link rel="canonical" href="<%= url %>">
+<% ROUTES.each do |code, path| -%>
+  <link rel="alternate" hreflang="<%= code %>" href="<%= SITE_URL %><%= path %>">
+<% end -%>
+  <link rel="alternate" hreflang="x-default" href="<%= SITE_URL %>/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="<%= h t["title"] %>">
+  <meta property="og:description" content="<%= h t["description"] %>">
+  <meta property="og:url" content="<%= url %>">
+  <meta property="og:locale" content="<%= h t["og_locale"] %>">
+  <link rel="preload" href="/assets/fonts/source-code-pro-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header>
+    <p class="language"><a href="<%= other_path %>" hreflang="<%= h other_code %>" lang="<%= h other_code %>"><%= h t["other_language"] %></a></p>
+    <h1>Kael Santini</h1>
+    <p class="role"><%= h t["role"] %></p>
+    <p><%= h t["summary"] %></p>
+    <%= contacts %>
+  </header>
+
+  <main>
+    <section>
+      <h2><%= h t["headings"]["products"] %></h2>
+<% t["products"].each do |product| -%>
+      <article>
+        <h3><a href="<%= h product["url"] %>"><%= h product["name"] %></a></h3>
+        <p class="meta"><%= h product["role"] %></p>
+        <p><%= h product["description"] %></p>
+      </article>
+<% end -%>
+    </section>
+
+    <section>
+      <h2><%= h t["headings"]["experience"] %></h2>
+<% t["experience"].each do |job| -%>
+      <article>
+<% if job["url"] -%>
+        <h3><a href="<%= h job["url"] %>"><%= h job["company"] %></a></h3>
+<% else -%>
+        <h3><%= h job["company"] %></h3>
+<% end -%>
+        <p class="meta"><%= h job["role"] %>, <%= h job["period"] %></p>
+        <p><%= h job["description"] %></p>
+        <p class="tech"><%= h job["tech"] %></p>
+      </article>
+<% end -%>
+    </section>
+
+    <section>
+      <h2><%= h t["headings"]["earlier"] %></h2>
+      <ul class="plain">
+<% t["earlier"].each do |job| -%>
+        <li><strong><%= h job["company"] %></strong> <span class="meta"><%= h job["role"] %>, <%= h job["period"] %></span></li>
+<% end -%>
+      </ul>
+    </section>
+
+    <section>
+      <h2><%= h t["headings"]["stack"] %></h2>
+      <ul class="plain">
+<% t["stack"].each do |line| -%>
+        <li><%= h line %></li>
+<% end -%>
+      </ul>
+    </section>
+
+    <section>
+      <h2><%= h t["headings"]["education"] %></h2>
+      <ul class="plain">
+<% t["education"].each do |course| -%>
+        <li><strong><%= h course["school"] %></strong> <span class="meta"><%= h course["degree"] %>, <%= h course["period"] %></span></li>
+<% end -%>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <%= contacts %>
+  </footer>
+</body>
+</html>
